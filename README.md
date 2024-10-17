@@ -1,11 +1,6 @@
-# EXPERIMENT--01-ALP-FOR-8086
-Name :
-Roll no 
-Date of experiment :
-
-
-
-
+# Name : Praveen S
+# Roll no : 212222240077
+# Date of experiment : 
 
 ## Aim: To Write and execute ALP on fundamental arithmetic and logical operations
 ## Components required: 8086  emulator 
@@ -78,30 +73,119 @@ Running The Emulator (emu8086) Intro 8086 Microprocessor Emulator, also known as
 ## Programs for arithmetic  operations
 
 ## Addition  of 8 bit ALP 
+```
+org 100h
 
-
+MOV AX,06H;
+MOV BX,03H;
+ADD AX,BX;
+MOV [500H],AX;
+ret
+```
 
 ## Output  
- 
+![image](https://github.com/user-attachments/assets/6d354885-5a7d-485f-bf99-000d95d23780)
+
+
 ## Subtraction   of 8 bit numbers  ALP 
- 
+ ```
+org 100h
+
+MOV AX,06H;
+MOV BX,03H;
+ADD AX,BX;
+MOV [600H],AX;
+ret
+```
 ## Output  
+![image](https://github.com/user-attachments/assets/1b208f5c-d42f-4cac-a2de-100bbf47dc0b)
+
+
+
 ## Multiplication alp 
+```
+org 100h
+
+MOV AX,06H;
+MOV BX,01H;
+ADD AX,BX;
+MOV [800H],AX;
+ret
+```
  ## Output  
+![Screenshot (38)(1)(1)](https://github.com/user-attachments/assets/a5e19c8c-2fd0-41e8-9ba3-ddb68b3ba0fe)
 
 
 ## Division alp 
+```
+org 100h
 
+MOV AX,04H;
+MOV BX,02H;
+ADD AX,BX;
+MOV [700H],AX;
+ret
+```
 ## Output  
+![image](https://github.com/user-attachments/assets/37d55003-83ed-438b-9321-3271b080a718)
 
+## Program for Logical Operations
+## AND
+```
+org 100h
 
-## Result :
- 
+MOV BX,04H; 
+MOV AX,08H;
+OR BX,AX;
+MOV [200H],AX;
 
+ret
+```
+## OUTPUT
+<img width="882" alt="image" src="https://github.com/user-attachments/assets/694a09cb-2351-41f7-a68e-53e19b78e332">
 
+## OR
+```
+org 100h
 
+MOV BX,04H; 
+MOV AX,08H;
+OR AX,BX;
+MOV [700H],AX;
 
+ret
+```
+## OUTPUT
+<img width="880" alt="image" src="https://github.com/user-attachments/assets/9cc817c3-1eff-4b0d-ad34-06fca6cc3f54">
 
+## XOR
+```
+org 100h
 
+MOV BX,014H; 
+MOV AX,08H;
+XOR AX,BX;
+MOV [700H],AX;
 
+ret
+```
+## OUTPUT
+<img width="884" alt="image" src="https://github.com/user-attachments/assets/01884920-6fec-404b-b06d-76fc280f5384">
 
+## NOT
+```
+org 100h
+
+MOV AX,04H;
+NOT AX;
+MOV [400],AX;
+
+ret
+
+```
+## OUTPUT
+<img width="797" alt="image" src="https://github.com/user-attachments/assets/0a324688-2d83-4588-a484-a80e919f1002">
+
+## RESULT
+
+Thus, ALP for fundamental arithmetic and logical operations are executed successfully.
