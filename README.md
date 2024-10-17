@@ -88,7 +88,7 @@ ret
 
 
 ## Subtraction   of 8 bit numbers  ALP 
- ```
+ ```asm
 org 100h
 
 MOV AX,06H;
@@ -117,7 +117,7 @@ ret
 
 
 ## Division alp 
-```
+```asm
 org 100h
 
 MOV AX,04H;
@@ -131,7 +131,7 @@ ret
 
 ## Program for Logical Operations
 ## AND
-```
+```asm
 org 100h
 
 MOV BX,04H; 
@@ -145,7 +145,7 @@ ret
 <img width="882" alt="image" src="https://github.com/user-attachments/assets/694a09cb-2351-41f7-a68e-53e19b78e332">
 
 ## OR
-```
+```asm
 org 100h
 
 MOV BX,04H; 
@@ -159,7 +159,7 @@ ret
 <img width="880" alt="image" src="https://github.com/user-attachments/assets/9cc817c3-1eff-4b0d-ad34-06fca6cc3f54">
 
 ## XOR
-```
+```asm
 org 100h
 
 MOV BX,014H; 
@@ -173,7 +173,7 @@ ret
 <img width="884" alt="image" src="https://github.com/user-attachments/assets/01884920-6fec-404b-b06d-76fc280f5384">
 
 ## NOT
-```
+```asm
 org 100h
 
 MOV AX,04H;
