@@ -108,7 +108,7 @@ org 100h
 
 MOV AX,06H;
 MOV BX,01H;
-ADD AX,BX;
+MUL BX;
 MOV [800H],AX;
 ret
 ```
@@ -122,8 +122,8 @@ org 100h
 
 MOV AX,04H;
 MOV BX,02H;
-ADD AX,BX;
-MOV [700H],AX;
+DIV BX;
+MOV [900H],AX;
 ret
 ```
 ## Output  
@@ -134,9 +134,9 @@ ret
 ```asm
 org 100h
 
-MOV BX,04H; 
-MOV AX,08H;
-OR BX,AX;
+MOV BX,08H; 
+MOV AX,04H;
+AND BX,AX;
 MOV [200H],AX;
 
 ret
@@ -165,7 +165,7 @@ org 100h
 MOV BX,014H; 
 MOV AX,08H;
 XOR AX,BX;
-MOV [700H],AX;
+MOV [200H],AX;
 
 ret
 ```
@@ -178,7 +178,7 @@ org 100h
 
 MOV AX,04H;
 NOT AX;
-MOV [400],AX;
+MOV [400H],AX;
 
 ret
 
